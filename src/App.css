@@ -27,3 +27,11 @@
   width: 90vw;
   background-color: #3b3b3b;
 }
+
+
+.lineTwo {
+  height: .1rem;
+  width: 90vw;
+  background-color: #3b3b3b;
+  margin-bottom: .5rem;
+}

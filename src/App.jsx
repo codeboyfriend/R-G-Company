@@ -7,7 +7,7 @@ import Instruction from './pages/Instruction';
 function App() {
   return (
     <Router>
-      <div className="bg-[#f4f4f4] flex h-[100vh] w-[100vw] align-center justify-center m-auto">
+      <div className="bg-[#f4f4f4] flex minH-[100vh] w-[100vw] align-center justify-center m-auto">
         <Routes>
           <Route path='/' element={<Box />} />
           <Route path='/form' element={<Entries />} />
