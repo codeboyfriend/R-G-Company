@@ -21,3 +21,9 @@
   justify-content: center;
   text-align: center;
 }
+
+.line {
+  height: .1rem;
+  width: 90vw;
+  background-color: #3b3b3b;
+}
