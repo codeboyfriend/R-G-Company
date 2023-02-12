@@ -24,14 +24,16 @@
 
 .line {
   height: .1rem;
-  width: 90vw;
   background-color: #3b3b3b;
 }
 
 
 .lineTwo {
   height: .1rem;
-  width: 90vw;
   background-color: #3b3b3b;
   margin-bottom: .5rem;
+}
+
+.my-form input{
+  border-bottom: 1px solid #3b3b3b;
 }

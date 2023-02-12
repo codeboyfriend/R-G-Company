@@ -35,8 +35,7 @@ const Box = () => {
             onChange={hnadleChange}
             type="email" 
             placeholder='Enter Email' 
-            className='input w-full p-2 outline-none' 
-            color="red"
+            className='input w-full p-2 outline-none'
             
         />
         <p className='text-sm pt-[.2rem] pb-4'>Use the email address you gave your agent</p>

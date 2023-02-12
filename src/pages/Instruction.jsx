@@ -1,6 +1,6 @@
 const Instruction = () => {
   return (
-    <div className='px-4'>
+    <div className='box mt-3 mb-6 px-4 py-4 w-[360px]'>
         <h1 className="text-center text-[1.2rem]">Instructions</h1>
 
         <div className="lineTwo mb-4"></div>
@@ -19,8 +19,8 @@ const Instruction = () => {
             <li className='text-sm pb-2'>FOR ASSISTANCE: Contact RG insurance Associates Division by calling in-state e toll free +44 7508 305745</li>
         </ul>
 
-        <h4>Notice</h4>
-        <p className='text-sm'>THIS DOCUMENT BECOMES AN OFFICIAL STATE RECORD WHEN COMPLETED. INFORMATION SHOULD BE TYPED OR PRINTED CLEARLY IN INK. COMPLETE A SEPARATE CONSENT TO TRANSFER FORM FOR EACH PARCEL OF REAL PROPERTY OR FOR EACH BANK OR CORPORATION.</p>
+        <h4 className="font-bold">Notice:</h4>
+        <p className='text-[.7rem]'>THIS DOCUMENT BECOMES AN OFFICIAL STATE RECORD WHEN COMPLETED. INFORMATION SHOULD BE TYPED OR PRINTED CLEARLY IN INK. COMPLETE A SEPARATE CONSENT TO TRANSFER FORM FOR EACH PARCEL OF REAL PROPERTY OR FOR EACH BANK OR CORPORATION.</p>
     </div>
   )
 }
