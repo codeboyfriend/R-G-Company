@@ -363,6 +363,57 @@ const Entries = () => {
               />
             </div>
           </div>
+
+          <div className='flex'>
+            <div className='filled_form'>
+              <label>Phone Number:</label>
+              <input
+                type="text"
+                className='input text-[#777777] bg-transparent outline-none border-none'
+              />
+            </div>
+            <div className='filled_form'>
+              <label>Occupation:</label>
+              <input
+                type="text"
+                className='input text-[#777777] bg-transparent outline-none border-none'
+              />
+            </div>
+          </div>
+
+          <div className='flex'>
+            <div className='filled_form'>
+              <label>Address Street:</label>
+              <input
+                type="text"
+                className='input text-[#777777] bg-transparent outline-none border-none'
+              />
+            </div>
+            <div className='filled_form'>
+              <label>City:</label>
+              <input
+                type="text"
+                className='input text-[#777777] bg-transparent outline-none border-none'
+              />
+            </div>
+          </div>
+
+          <div className='flex'>
+            <div className='filled_form'>
+              <label>State:</label>
+              <input
+                type="text"
+                className='input text-[#777777] bg-transparent outline-none border-none'
+              />
+            </div>
+            <div className='filled_form'>
+              <label>Zip Code:</label>
+              <input
+                type="text"
+                className='input text-[#777777] bg-transparent outline-none border-none'
+              />
+            </div>
+          </div>
         </div>
     </div>
   )
