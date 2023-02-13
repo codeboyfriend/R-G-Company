@@ -435,13 +435,81 @@ const Entries = () => {
             <label>Currency:</label>
             <div className='mx-2'>
                 <label>USD</label>
-                <input className='ml-1' type="checkbox" />
+                <input className='check_box ml-1' type="checkbox" checked/>
               </div>
               <div>
                 <label>BTC</label>
-                <input className='ml-1' type="checkbox" />
+                <input className='check_box ml-1' type="checkbox" />
+              </div>
+            </div>
+
+            <div className='my-form flex my-1'>
+            <label>Form of Claim:</label>
+            <div className='mx-2'>
+                <label>Box</label>
+                <input className='ml-1' type="checkbox" checked />
+              </div>
+              <div>
+                <label>Bank</label>
+                <input className='check_box ml-1' type="checkbox" />
               </div>
           </div>
+
+          <div className='flex'>
+            <div className='my-form'>
+              <label>Batch No:</label>
+              <input
+                type="text"
+                className='input text-[#777777] bg-transparent outline-none border-none'
+                value={'66840090040'}
+              />
+            </div>
+            <div className='my-form'>
+              <label>Year Deposited:</label>
+              <input
+                type="text"
+                className='input text-[#777777] bg-transparent outline-none border-none'
+                value={'2013'}
+              />
+            </div>
+          </div>
+
+          <div className='my-form flex'>
+            <label>Secret Question: My Pets Name?</label>
+            <label className='ml-2 text-[#777777]'>King</label>
+          </div>
+          <div className='my-form flex'>
+            <label>Secret Code:</label>
+            <label className='ml-2 text-[#777777]'>24-YWS-9060040</label>
+          </div>
+          <div className='flex'> 
+            <div className='my-form flex'>
+              <label>Total Amount:</label>
+              <label className='ml-2 text-[#777777]'>$100,000</label>
+            </div>
+            <div className='my-form flex ml-2'>
+              <label>Amount Received:</label>
+              <label className='ml-2 text-[#777777]'>$2000</label>
+            </div>
+          </div>
+          <div className='my-form flex'>
+              <label>Balance:</label>
+              <label className='ml-2 text-[#777777]'>$98,000</label>
+            </div>
+            <div className='flex'> 
+            <div className='my-form flex'>
+              <label>VAT:</label>
+              <label className='ml-2 text-[#777777]'>$500</label>
+            </div>
+            <div className='my-form flex ml-2'>
+              <label>VAT Balance:</label>
+              <label className='ml-2 text-[#777777]'>$100</label>
+            </div>
+          </div>
+
+          <button 
+            className='w-full mt-2 rounded-lg bg-[#0069be] text-[#fff] p-2 hover:bg-[#0083ee]'>SUBMIT
+          </button>
         </div>
     </div>
   )

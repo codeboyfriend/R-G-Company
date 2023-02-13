@@ -42,7 +42,8 @@ const Box = () => {
 
       <button 
         onClick={() => signUp()}
-        className='rounded-lg bg-[#0069be] text-[#fff] p-3 hover:bg-[#0083ee]'>SIGN IN</button>
+        className='rounded-lg bg-[#0069be] text-[#fff] p-3 hover:bg-[#0083ee]'>SIGN IN
+      </button>
       
       <div className='pt-10 text-center'>
         <h4 className='font-bold text-[rgba(0, 0, 0, 0.8)]'>R&G Insurance Associates</h4>
