@@ -31,12 +31,11 @@ const Box = () => {
       
       <div className='pt-3'>
         <input 
-            value={inputValue}
-            onChange={hnadleChange}
-            type="email" 
-            placeholder='Enter Email' 
-            className='input w-full p-2 outline-none'
-            
+          value={inputValue}
+          onChange={hnadleChange}
+          type="email" 
+          placeholder='Enter Email' 
+          className='input w-full p-2 outline-none'
         />
         <p className='text-sm pt-[.2rem] pb-4'>Use the email address you gave your agent</p>
       </div>

@@ -34,6 +34,22 @@
   margin-bottom: .5rem;
 }
 
+.my-form {
+  line-height: 1rem;
+  margin-top: .3rem;
+}
+
+.my-form label {
+  font-size: .8rem;
+}
+
 .my-form input{
-  border-bottom: 1px solid #3b3b3b;
+  border-bottom: 1px solid #777777;
+  font-size: .8rem;
+  border-radius: 0;
+  /* width: 100%; */
+}
+
+.my-form .input {
+  pointer-events: none;
 }
