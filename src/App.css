@@ -53,3 +53,25 @@
 .my-form .input {
   pointer-events: none;
 }
+
+.line_form {
+  height: 2px;
+  margin-top: 4px;
+  background-color: #3b3b3b;
+}
+
+.filled_form input{
+  border-bottom: 1px solid #777777;
+  font-size: .8rem;
+  border-radius: 0;
+}
+
+.filled_form label{
+  font-size: .8rem;
+}
+
+.filled_form input{
+  border-bottom: 1px solid #777777;
+  font-size: .8rem;
+  border-radius: 0;
+}
