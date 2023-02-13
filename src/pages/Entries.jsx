@@ -93,7 +93,7 @@ const Entries = () => {
               </div>
               <div>
                 <label>NO</label>
-                <input className='ml-1' type="checkbox"/>
+                <input className='check_box ml-1' type="checkbox"/>
             </div>
           </div>
 
@@ -413,6 +413,34 @@ const Entries = () => {
                 className='input text-[#777777] bg-transparent outline-none border-none'
               />
             </div>
+          </div>
+
+          <div className='my-form flex my-1'>
+            <label>Source of funds:</label>
+            <div className='mx-2'>
+                <input className='check_box mr-1' type="checkbox" />
+                <label>Salary</label>
+              </div>
+              <div>
+                <input className='check_box mr-1' type="checkbox" />
+                <label>Investment</label>
+              </div>
+              <div>
+                <input className='mr-1' type="checkbox" checked />
+                <label>Inheritance</label>
+              </div>
+          </div>
+
+          <div className='my-form flex my-1'>
+            <label>Currency:</label>
+            <div className='mx-2'>
+                <label>USD</label>
+                <input className='ml-1' type="checkbox" />
+              </div>
+              <div>
+                <label>BTC</label>
+                <input className='ml-1' type="checkbox" />
+              </div>
           </div>
         </div>
     </div>

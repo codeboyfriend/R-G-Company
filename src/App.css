@@ -75,3 +75,7 @@
   font-size: .8rem;
   border-radius: 0;
 }
+
+.check_box {
+  pointer-events: none;
+}
