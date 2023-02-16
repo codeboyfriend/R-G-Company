@@ -4,12 +4,14 @@ import { useNavigate } from "react-router-dom";
 
 const Box = () => {
     const [gmail, setGmail] = useState('Amberfavour8@gmail.com');
+    const [gmailSmall, setGmailSmall] = useState('amberfavour8@gmail.com');
+    const [gmailCap, setGmailCap] = useState('AMBERFAVOUR8@gmail.com');
     const [inputValue, setInputValue] = useState('')
     const [verification, setVerification] = useState(true);
     const navigate = useNavigate()
 
     const signUp = () => {
-        if (inputValue === gmail) {
+        if (inputValue === gmail || inputValue === gmailSmall || inputValue === gmailCap) {
             setVerification(true)
             navigate('/form')
         } else {

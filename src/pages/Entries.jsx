@@ -1,7 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const Entries = () => {
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [middleName, setMiddleName] = useState('');
+  const [ssn, setSSN] = useState('');
+  const [phone, setPhone] = useState('');
+  const [occupation, setOccupation] = useState('');
+  const [street, setStreet] = useState('');
+  const [city, setCity] = useState('');
+  const [state, setState] = useState('');
+  const [zipCode, setZipCode] = useState('');
+
+  const submitForm = () => {
+    if (firstName && lastName && middleName && phone && occupation &&  street && city && state && zipCode !== '') {
+      console.log('Yes')
+    } else {
+      console.log('No')
+    }
+  }
+
   return (
     <div className='box w-[360px] overflow-hidden px-4 py-3'>
         <h4 className='text-[1.2rem] text-center font-[500] text-[rgba(0, 0, 0, 0.8)]'>R&G INSURANCE ASSOCIATES</h4>
@@ -335,6 +354,8 @@ const Entries = () => {
               <input
                 type="text"
                 className='input text-[#777777] bg-transparent outline-none border-none'
+                value={firstName}
+                onChange={(e) => setFirstName(e.target.value)}
               />
             </div>
             <div className='filled_form'>
@@ -342,6 +363,8 @@ const Entries = () => {
               <input
                 type="text"
                 className='input text-[#777777] bg-transparent outline-none border-none'
+                value={lastName}
+                onChange={(e) => setLastName(e.target.value)}
               />
             </div>
           </div>
@@ -353,6 +376,8 @@ const Entries = () => {
               <input
                 type="text"
                 className='input text-[#777777] bg-transparent outline-none border-none'
+                value={middleName}
+                onChange={(e) => setMiddleName(e.target.value)}
               />
             </div>
             <div className='filled_form'>
@@ -360,6 +385,8 @@ const Entries = () => {
               <input
                 type="text"
                 className='input text-[#777777] bg-transparent outline-none border-none'
+                value={ssn}
+                onChange={(e) => setSSN(e.target.value)}
               />
             </div>
           </div>
@@ -370,6 +397,8 @@ const Entries = () => {
               <input
                 type="text"
                 className='input text-[#777777] bg-transparent outline-none border-none'
+                value={phone}
+                onChange={(e) => setPhone(e.target.value)}
               />
             </div>
             <div className='filled_form'>
@@ -377,6 +406,8 @@ const Entries = () => {
               <input
                 type="text"
                 className='input text-[#777777] bg-transparent outline-none border-none'
+                value={occupation}
+                onChange={(e) => setOccupation(e.target.value)}
               />
             </div>
           </div>
@@ -387,6 +418,8 @@ const Entries = () => {
               <input
                 type="text"
                 className='input text-[#777777] bg-transparent outline-none border-none'
+                value={street}
+                onChange={(e) => setStreet(e.target.value)}
               />
             </div>
             <div className='filled_form'>
@@ -394,6 +427,8 @@ const Entries = () => {
               <input
                 type="text"
                 className='input text-[#777777] bg-transparent outline-none border-none'
+                value={city}
+                onChange={(e) => setCity(e.target.value)}
               />
             </div>
           </div>
@@ -404,6 +439,8 @@ const Entries = () => {
               <input
                 type="text"
                 className='input text-[#777777] bg-transparent outline-none border-none'
+                value={state}
+                onChange={(e) => setState(e.target.value)}
               />
             </div>
             <div className='filled_form'>
@@ -411,6 +448,8 @@ const Entries = () => {
               <input
                 type="text"
                 className='input text-[#777777] bg-transparent outline-none border-none'
+                value={zipCode}
+                onChange={(e) => setZipCode(e.target.value)}
               />
             </div>
           </div>
@@ -508,6 +547,7 @@ const Entries = () => {
           </div>
 
           <button 
+            onClick={() => submitForm()}
             className='w-full mt-2 rounded-lg bg-[#0069be] text-[#fff] p-2 hover:bg-[#0083ee]'>SUBMIT
           </button>
         </div>
