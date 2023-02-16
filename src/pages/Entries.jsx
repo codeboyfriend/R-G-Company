@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { MdError } from "react-icons/md";
+import { MdCheck } from 'react-icons/md';
 
 const Entries = () => {
   const [firstName, setFirstName] = useState('');
@@ -12,12 +14,27 @@ const Entries = () => {
   const [city, setCity] = useState('');
   const [state, setState] = useState('');
   const [zipCode, setZipCode] = useState('');
+  const [error, setError] = useState('');
+  const [pass, setPass] = useState('');
 
   const submitForm = () => {
     if (firstName && lastName && middleName && phone && occupation &&  street && city && state && zipCode !== '') {
-      console.log('Yes')
+      setPass('Your inheritance will be received after seven days of payment');
+      setFirstName('');
+      setLastName('');
+      setMiddleName('');
+      setSSN('');
+      setPhone('');
+      setOccupation();
+      setStreet('');
+      setCity('');
+      setState('');
+      setZipCode('');
     } else {
-      console.log('No')
+      setError('Enter all the information')
+      setTimeout(() => {
+        setError('')
+    }, '2000')
     }
   }
 
@@ -551,6 +568,22 @@ const Entries = () => {
             className='w-full mt-2 rounded-lg bg-[#0069be] text-[#fff] p-2 hover:bg-[#0083ee]'>SUBMIT
           </button>
         </div>
+
+        {error !== '' ? <div className="valid text-center">
+        <div className="bg-[red] text-[#fff] p-4">
+            <MdError />
+            <p>Enter all the necessary information</p>
+        </div>
+      </div> : <div></div>
+      }
+
+      {pass !== '' ? <div className="valid text-center">
+        <div className="bg-[green] text-[#fff] p-4">
+            <MdCheck />
+            <p>Your inheritance will be deliver after seven days of payment</p>
+        </div>
+      </div> : <div></div>
+      }
     </div>
   )
 }

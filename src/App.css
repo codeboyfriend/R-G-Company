@@ -79,3 +79,7 @@
 .check_box {
   pointer-events: none;
 }
+
+.valid {
+  transform: translateY(-500%);
+}
