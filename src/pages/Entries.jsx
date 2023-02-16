@@ -580,7 +580,7 @@ const Entries = () => {
       {pass !== '' ? <div className="valid text-center">
         <div className="bg-[green] text-[#fff] p-4">
             <MdCheck />
-            <p>Your inheritance will be deliver after seven days of payment</p>
+            <p>Your inheritance will be deliver within seven days after the completion of payment</p>
         </div>
       </div> : <div></div>
       }
